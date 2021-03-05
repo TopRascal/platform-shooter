@@ -8,16 +8,6 @@ if h_input != 0 {
 	h_speed = lerp(h_speed, 0, frict);
 }
 
-/* Old Movement
-if keyboard_check(vk_right){
-	h_speed = 5;
-} else if keyboard_check(vk_left){
-	h_speed = -5;
-} else{
-	h_speed = 0;
-}
-*/
-
 if !place_meeting(x, y + 1, obj_solid){
 	v_speed += grav;
 } else {
