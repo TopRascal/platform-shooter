@@ -13,6 +13,8 @@ if !place_meeting(x, y + 1, obj_solid){
 } else {
 	if keyboard_check_pressed(vk_up){
 		v_speed = jump_height;
+		x_scale = image_xscale * 0.8;
+		y_scale = image_yscale * 1.4;
 	}
 }
 
@@ -31,3 +33,13 @@ if place_meeting(x, y + v_speed, obj_solid){
 	v_speed = 0;
 }
 y += v_speed;
+
+// Check for landing
+if place_meeting(x, y + 1, obj_solid) && !place_meeting(x, yprevious + 1, obj_solid) {
+	x_scale = image_xscale * 1.4;
+	y_scale = image_yscale * 0.8;
+}
+
+//Squash Animation
+x_scale = lerp(x_scale, image_xscale, .2);
+y_scale = lerp(y_scale, image_yscale, .2);
