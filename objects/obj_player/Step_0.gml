@@ -18,21 +18,7 @@ if !place_meeting(x, y + 1, obj_solid){
 	}
 }
 
-if place_meeting(x + h_speed, y, obj_solid){
-	while !place_meeting(x + sign(h_speed), y, obj_solid){
-		x += sign(h_speed);
-	}
-	h_speed = 0;
-}
-x += h_speed;
-
-if place_meeting(x, y + v_speed, obj_solid){
-	while !place_meeting(x, y + sign(v_speed), obj_solid){
-		y += sign(v_speed);
-	}
-	v_speed = 0;
-}
-y += v_speed;
+scr_move();
 
 // Check for landing
 if place_meeting(x, y + 1, obj_solid) && !place_meeting(x, yprevious + 1, obj_solid) {
