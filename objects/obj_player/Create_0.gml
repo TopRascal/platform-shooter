@@ -6,6 +6,7 @@ grav = 0.5;
 accel = 1;
 jump_height = -10;
 frict = 0.6;
+p_health = 5;
 
 // Keymapping
 keyboard_set_map(ord("W"), vk_up);

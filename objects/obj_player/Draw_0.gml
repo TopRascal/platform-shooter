@@ -1,4 +1,4 @@
-var dir = point_direction(x, y, mouse_x, mouse_y);
+var dir = point_direction(x, y - sprite_height / 2, mouse_x, mouse_y);
 var flip = (mouse_x > x) * 2 - 1;
 
 // Draw Player

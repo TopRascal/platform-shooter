@@ -1,20 +1,23 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_move()
 {
-if place_meeting(x + h_speed, y, obj_solid){
-	while !place_meeting(x + sign(h_speed), y, obj_solid){
-		x += sign(h_speed);
-	}
-	h_speed = 0;
-}
-x += h_speed;
+///@param hspeed
+///@param vspeed
+var hspd = argument0;
+var vspd = argument1;
 
-if place_meeting(x, y + v_speed, obj_solid){
-	while !place_meeting(x, y + sign(v_speed), obj_solid){
-		y += sign(v_speed);
+if place_meeting(x + hspd, y, obj_solid){
+	while !place_meeting(x + sign(hspd), y, obj_solid){
+		x += sign(hspd);
 	}
-	v_speed = 0;
+	hspd = 0;
 }
-y += v_speed;
+x += hspd;
+
+if place_meeting(x, y + vspd, obj_solid){
+	while !place_meeting(x, y + sign(vspd), obj_solid){
+		y += sign(vspd);
+	}
+	vspd = 0;
+}
+y += vspd;
 }

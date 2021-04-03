@@ -1,4 +1,9 @@
 ///@description Movement
+//Check for death
+if p_health <= 0 {
+	instance_destroy();
+}
+
 var h_input = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 if h_input != 0 {
@@ -18,7 +23,7 @@ if !place_meeting(x, y + 1, obj_solid){
 	}
 }
 
-scr_move();
+scr_move(h_speed, v_speed);
 
 // Check for landing
 if place_meeting(x, y + 1, obj_solid) && !place_meeting(x, yprevious + 1, obj_solid) {
