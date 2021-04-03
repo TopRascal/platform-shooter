@@ -1,7 +1,6 @@
 // @description Initializing Variables
-h_speed = 0;
-max_h_speed = 4;
-v_speed = 0;
+x_speed = [0, 0];
+max_x_speed = 4;
 grav = 0.5;
 accel = 1;
 jump_height = -10;

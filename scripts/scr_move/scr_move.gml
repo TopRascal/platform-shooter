@@ -1,23 +1,21 @@
 function scr_move()
 {
-///@param hspeed
-///@param vspeed
-var hspd = argument0;
-var vspd = argument1;
+///@param speed
+var x_speed = argument0;
 
-if place_meeting(x + hspd, y, obj_solid){
-	while !place_meeting(x + sign(hspd), y, obj_solid){
-		x += sign(hspd);
+if place_meeting(x + x_speed[h], y, obj_solid){
+	while !place_meeting(x + sign(x_speed[h]), y, obj_solid){
+		x += sign(x_speed[h]);
 	}
-	hspd = 0;
+	x_speed[@ h] = 0;
 }
-x += hspd;
+x += x_speed[h];
 
-if place_meeting(x, y + vspd, obj_solid){
-	while !place_meeting(x, y + sign(vspd), obj_solid){
-		y += sign(vspd);
+if place_meeting(x, y + x_speed[v], obj_solid){
+	while !place_meeting(x, y + sign(x_speed[v]), obj_solid){
+		y += sign(x_speed[v]);
 	}
-	vspd = 0;
+	x_speed[@ v] = 0;
 }
-y += vspd;
+y += x_speed[v];
 }
