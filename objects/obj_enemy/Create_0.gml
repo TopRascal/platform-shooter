@@ -1,7 +1,7 @@
 /// @description Initialize the enemy
 x_speed = [0, 0];
-x_speed_push = [0, 0];
-x_speed_max = 1;
+acceleration = 0.05;
+x_speed_max = 2;
 x_health = 4;
 
 // Fire Rate & Cooldown
@@ -10,7 +10,5 @@ alarm[0] = bullet_cooldown;
 
 // States
 MOVEMENT = 0;
-ATTACK = 1;
-HIT = 2;
 
 state = MOVEMENT; 

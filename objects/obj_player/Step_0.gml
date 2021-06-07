@@ -29,7 +29,7 @@ if !place_meeting(x, y + 1, obj_solid){
 	}
 }
 
-scr_move(x_speed);
+scr_move(x_speed, 0);
 
 // Check for landing
 if place_meeting(x, y + 1, obj_solid) && !place_meeting(x, yprevious + 1, obj_solid) {
