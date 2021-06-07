@@ -1,12 +1,13 @@
 {
   "resources": [
     {"id":{"name":"t_autotile","path":"tilesets/t_autotile/t_autotile.yy",},"order":0,},
-    {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},"order":4,},
-    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":2,},
-    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":3,},
+    {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},"order":3,},
+    {"id":{"name":"warp","path":"scripts/warp/warp.yy",},"order":2,},
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":1,},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":2,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
-    {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":1,},
+    {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":5,},
     {"id":{"name":"spr_gun","path":"sprites/spr_gun/spr_gun.yy",},"order":2,},
     {"id":{"name":"spr_enemy_bullet","path":"sprites/spr_enemy_bullet/spr_enemy_bullet.yy",},"order":5,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":0,},
@@ -15,6 +16,7 @@
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":3,},
     {"id":{"name":"s_autotile","path":"sprites/s_autotile/s_autotile.yy",},"order":6,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":4,},
+    {"id":{"name":"o_spawner","path":"objects/o_spawner/o_spawner.yy",},"order":4,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
   ],
   "Options": [
