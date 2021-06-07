@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"t_autotile","path":"tilesets/t_autotile/t_autotile.yy",},"order":0,},
     {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},"order":4,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":2,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":3,},
@@ -12,6 +13,7 @@
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},"order":1,},
     {"id":{"name":"rm_one","path":"rooms/rm_one/rm_one.yy",},"order":0,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":3,},
+    {"id":{"name":"s_autotile","path":"sprites/s_autotile/s_autotile.yy",},"order":6,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":4,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
   ],
@@ -55,7 +57,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "platform-shooter",

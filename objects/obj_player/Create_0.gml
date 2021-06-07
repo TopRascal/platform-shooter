@@ -21,3 +21,6 @@ alarm[0] = bullet_cooldown;
 // Scale Vars
 x_scale = image_xscale;
 y_scale = image_yscale;
+
+var solid_layer = layer_get_id("Solids");
+layer_set_visible(solid_layer, debug_mode);
