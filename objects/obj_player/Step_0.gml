@@ -41,5 +41,5 @@ if place_meeting(x, y + 1, obj_solid) && !place_meeting(x, yprevious + 1, obj_so
 x_scale = lerp(x_scale, image_xscale, .2);
 y_scale = lerp(y_scale, image_yscale, .2);
 
-// Warp
-warp();
+/// Warp
+//warp();

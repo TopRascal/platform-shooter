@@ -5,8 +5,8 @@ x_speed_max = 2;
 x_health = 4;
 
 // Fire Rate & Cooldown
-bullet_cooldown = room_speed / 2;
-alarm[0] = bullet_cooldown;
+bullet_cooldown = game_get_speed(gamespeed_fps);
+alarm[0] = random(bullet_cooldown);
 
 // States
 MOVEMENT = 0;

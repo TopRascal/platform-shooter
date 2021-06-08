@@ -10,3 +10,4 @@ if not pause {
 	pause = false;
 	instance_activate_all();
 }
+///CURRENTLY BROKEN DUE TO ROOM SIZE

@@ -6,4 +6,4 @@ if x_health <= 0 {
 	instance_destroy();
 }
 
-warp();
+//warp();
