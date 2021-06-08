@@ -7,6 +7,7 @@ jump_height = -10;
 frict = 0.6;
 max_health = 5;
 p_health = max_health;
+invincible = false;
 
 // Keymapping
 keyboard_set_map(ord("W"), vk_up);
