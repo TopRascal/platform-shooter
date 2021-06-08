@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_player_hoodie",
+    "path": "sprites/spr_player_hoodie/spr_player_hoodie.yy",
   },
   "solid": false,
   "visible": true,
